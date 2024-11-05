@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGames Ultra - The Ultimate Gaming Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('img/cyber.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">VGames Ultra</a>
+                <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#tournaments">Tournaments</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Vgames Ultra</h1>
+                <p>Experience the Future of Gaming</p>
+                <a href="#" class="btn">Join the Revolution</a>
+            </div>
+        </section>
+
+        <section id="games" class="featured-games">
+            <div class="container">
+                <h2>Featured Games</h2>
+                <div class="games-grid">
+                    <div class="game-card">
+                        <img src="img/vgame.png" alt="Cyberpunk Adventure" loading="lazy">
+                        <div class="game-content">
+                            <h3 class="game-title">Cyberpunk Adventure</h3>
+                            <p class="game-description">Immerse yourself in a futuristic world of high-tech and low life.</p>
+                            <a href="#" class="btn" onclick="openModal()">Play Now</a>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="img/fantas.png" alt="Fantasy Realms" loading="lazy">
+                        <div class="game-content">
+                            <h3 class="game-title">Fantasy Realms</h3>
+                            <p class="game-description">Embark on an epic journey through magical lands and mythical creatures.</p>
+                            <a href="#" class="btn" onclick="openModal()">Play Now</a>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="img/galatic.png" alt="Galactic Conquest" loading="lazy">
+                        <div class="game-content">
+                            <h3 class="game-title">Galactic Conquest</h3>
+                            <p class="game-description">Build your empire and conquer the stars in this space strategy game.</p>
+                            <a href="#" class="btn" onclick="openModal()">Play Now</a>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="img/neon.png" alt="Neon Racers" loading="lazy">
+                        <div class="game-content">
+                            <h3 class="game-title">Neon Racers</h3>
+                            <p class="game-description">Race through neon-lit cityscapes in high-speed hover vehicles.</p>
+                            <a href="#" class="btn" onclick="openModal()">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="registerModal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Sorry, this feature is under development</h2>
+                <p>We are working on making this feature available soon. Please check back later!</p>
+            </div>
+        </div>
+
+        <section id="tournaments" class="tournaments">
+            <div class="container">
+                <h2>Upcoming Tournaments</h2>
+                <div class="tournament-card">
+                    <div class="tournament-header">
+                        <h3 class="tournament-title">Cyberpunk Showdown</h3>
+                        <span class="tournament-prize">$100,000 Prize Pool</span>
+                    </div>
+                    <div class="tournament-details">
+                        <span class="tournament-date">December 15, 2024</span>
+                        <span class="tournament-participants">128 Teams</span>
+                    </div>
+                    <a href="#" class="btn" onclick="openModal()">Register Now</a>
+                </div>
+                <div class="tournament-card">
+                    <div class="tournament-header">
+                        <h3 class="tournament-title">Fantasy Realms Championship</h3>
+                        <span class="tournament-prize">$50,000 Prize Pool</span>
+                    </div>
+                    <div class="tournament-details">
+                        <span class="tournament-date">December 25, 2024</span>
+                        <span class="tournament-participants">64 Teams</span>
+                    </div>
+                    <a href="#" class="btn" onclick="openModal()">Register Now</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modal -->
+        
+    </main>
+
+    <div id="registerModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Sorry, this feature is under development</h2>
+            <p>We are working on making this feature available soon. Please check back later!</p>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About VGames</h3>
+                    <p>VGames Ultra is the ultimate destination for gamers seeking cutting-edge experiences and thrilling competitions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#">Games</a>
+                        <a href="#">Tournaments</a>
+                        <a href="#">News</a>
+                        <a href="#">Support</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-icons">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+          </div>
+        </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VGames Ultra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
